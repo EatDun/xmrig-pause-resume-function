@@ -39,7 +39,7 @@ class Main {
             }
         }
     }
-private static void stopStart(String method) {
+    private static void stopStart(String method) {
         String command = "curl --silent --data '{\"method\":\"" + method + "\",>
                        + "-H \"Content-Type: application/json\" "
                        + "-H \"Authorization: Bearer 123\" "
