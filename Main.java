@@ -12,6 +12,7 @@ class Main {
     public static void main(String[] args) {
         boolean paused = false;
 
+        //TOD boolean logic
         while(true) {
             int hour = LocalTime.now().getHour();
             boolean isPeak = hour >= 15 && hour < 19;
@@ -39,7 +40,9 @@ class Main {
             }
         }
     }
-    private static void stopStart(String method) {
+
+    //API call for pausing miner
+    public static void stopStart(String method) {
         String command = "curl --silent --data '{\"method\":\"" + method + "\",>
                        + "-H \"Content-Type: application/json\" "
                        + "-H \"Authorization: Bearer 123\" "
@@ -52,7 +55,9 @@ class Main {
             e.printStackTrace();
         }
     }
-    private static void getStatus() {
+
+    //API call for checking status
+    public static void getStatus() {
         String commandS = "curl -H \"Authorization: Bearer 123\" http://127.0.0>
 
         try {
