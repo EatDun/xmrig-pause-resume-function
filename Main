@@ -8,7 +8,7 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
 
-class XMRigPauseResume {
+class Main {
     public static void main(String[] args) {
         boolean paused = false;
 
