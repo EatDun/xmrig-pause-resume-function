@@ -46,8 +46,8 @@ class Main {
         String command = "curl --silent --data '{\"method\":\"" + method + "\",>
                        + "-H \"Content-Type: application/json\" "
                        + "-H \"Authorization: Bearer 123\" "
-                       + "http://127.0.0.1:16000/json_rpc";
-
+                       + "http://YOUR_IP_ADDRESS_&_PORT/json_rpc";
+0
         try {
             Process process = Runtime.getRuntime().exec(new String[] { "bash", >
             process.waitFor();
